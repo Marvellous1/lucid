@@ -293,11 +293,11 @@ button {
     );
     border-image-slice: 1;
   }
-
+/* 
   .mobile-footer-logo {
     position: absolute;
-    bottom: 0px;
-  }
+    bottom: 10vh;
+  } */
 }
 
 /* @media (min-width: 576px) {
