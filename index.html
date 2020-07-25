@@ -158,8 +158,10 @@
     <div class="container my-5">
       <div class="row">
         <div class="col-lg-9 order-2 order-lg-1">
+
           <!-- Compose -->
-          <div class="card bg-white card px-5 py-3 mb-5">
+          <div class="card bg-white ca mb-5">
+            <div class="card-body  px-5 py-3">
             <div class="mb-4">
               <img src="/images/compose-photo.png" class="mr-3" alt="" />
               Compose an epic...
@@ -171,14 +173,15 @@
               rows="4"
             ></textarea>
             <div class="d-flex justify-content-between align-items-center">
-              <p class="actions">
-                <span class="mr-3"><i class="fa fa-camera"></i> Image</span>
-                <span class="mr-3"><i class="fa fa-camera"></i> Emoji</span>
-                <span class="mr-3"><i class="fa fa-camera"></i> Tags</span>
+              <p class="actions d-flex">
+                <span class="mr-3  d-flex"><i class="fa fa-camera mr-2"></i> <span class="d-none d-lg-block">Image</span></span>
+                <span class="mr-3 d-flex"><i class="fa fa-camera mr-2"></i> <span class="d-none d-lg-block">Emoji</span></span>
+                <span class="mr-3 d-flex"><i class="fa fa-camera mr-2"></i> <span class="d-none d-lg-block">Tags</span></span>
               </p>
               <button class="btn purple text-white px-3">Post</button>
             </div>
           </div>
+        </div>
 
           <!-- Posts -->
           <div class="post bg-white card px-5 py-3 mb-3">
@@ -193,7 +196,7 @@
                     <p class="small-circle mx-3">-</p>
                     <p class="sub-text">5 mins ago</p>
                   </div>
-                  <div class="category d-none d-block">
+                  <div class="category d-none d-lg-block">
                     <button
                       class="btn btn-sm cat-btn purple-text"
                       style="background: #f3e9f5;"
@@ -228,6 +231,14 @@
                     </p>
                   </div>
                 </div>
+                <div class="category d-lg-none">
+                    <button
+                      class="btn btn-sm cat-btn purple-text"
+                      style="background: #f3e9f5;"
+                    >
+                      UI/UX
+                    </button>
+                  </div>
               </div>
             </div>
           </div>

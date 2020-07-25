@@ -122,16 +122,16 @@ hr {
   border-bottom: 1px solid #c4c4c4;
 }
 
-.form-check-input {
-  border-radius: 50%;
-}
-
-textarea:focus,
-textarea:active {
+.compose-input:focus,
+.compose-input:active {
   outline: none;
   box-shadow: none !important;
   border: none;
   border-bottom: 2px solid #c4c4c4;
+}
+
+.form-check-input {
+  border-radius: 50%;
 }
 
 .cat-search,
