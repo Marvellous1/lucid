@@ -1,0 +1,197 @@
+:root {
+  --my-purple: #6f2184;
+}
+
+body {
+  color: #535353;
+  background: #e5e5e5;
+}
+
+.purple {
+  background: var(--my-purple);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #141414;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+}
+
+.numbers {
+  font-size: 22px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #8d8d8d;
+}
+
+.small-circle {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: #c4c4c4;
+  color: #c4c4c4;
+}
+
+hr {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-link {
+  margin-bottom: -16px;
+  padding-bottom: 16px;
+  color: white !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  border-bottom: 3px solid white;
+}
+
+.nav-icons {
+  color: white;
+  font-size: 16px;
+}
+
+.sub-text {
+  font-size: 12px;
+}
+
+.dropdown-title {
+    font-size: 24;
+    font-weight: normal;
+    
+}
+
+.dropdown-button:hover, .dropdown-button, .dropdown-button:active {
+    text-decoration: none !important;
+}
+
+.plus {
+  /* padding: 0px; */
+  font-size: 16px;
+  border: 1px solid var(--my-purple);
+}
+
+.actions {
+  font-size: 16px;
+  color: var(--my-purple);
+}
+
+.purple-text {
+  color: var(--my-purple);
+}
+
+.compose-input {
+  border-radius: 0px;
+  border: none;
+  resize: none;
+  overflow: auto;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.form-check-input {
+    border-radius: 50%;
+}
+
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-shadow: none !important;
+  border: none;
+  border-bottom: 2px solid #C4C4C4;
+}
+
+.cat-search, .cat-search:hover, .cat-search:active {
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.round-check {
+    position: relative;
+  }
+  
+  .round-check label {
+    background-color: #fff;
+    border: 1px solid var(--my-purple);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+  }
+  
+  .round-check label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg);
+    width: 9px;
+  }
+  
+  .round-check input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round-check input[type="checkbox"]:checked + label {
+    background-color: var(--my-purple);
+    border-color: var(--my-purple);
+  }
+  
+  .round-check input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+  
+/* 
+  
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+   */

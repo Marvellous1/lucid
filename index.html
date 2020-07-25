@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lucid Blog</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="purple">
+      <nav
+        class="container navbar navbar-dark align-items-center justify-content-between navbar-expand-lg"
+      >
+        <a class="navbar-brand" href="/home">
+          <img src="/images/logo.png" alt="logo" class="d-inline-block mr-2" >
+          Lucid
+        </a>
+        <div class="d-lg-none">
+          <button class="btn-transparent btn">
+            <i class="fa nav-icons fa-search"></i>
+          </button>
+          <button class="btn-transparent btn">
+            <i class="fa nav-icons fa-bell"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse nav-col navbar-collapse" id="navbarNavAltMarkup">
+          <!-- <div class="navbar-nav"> -->
+            <a class="nav-item nav-link mr-2 active" href="#"
+              >Timeline <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link mr-2" href="#">My post</a>
+            <a class="nav-item nav-link mr-2" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#">Explore</a>
+          </div>
+        <!-- </div> -->
+        <div class="informations d-none d-lg-block">
+          <div class="d-flex align-items-center">
+            <div>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-search"></i>
+              </button>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-bell"></i>
+              </button>
+              <img src="/images/compose-photo.png" alt="" />
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                John Doe
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Nav 2 -->
+    <!-- <div class="bg-white">
+      <nav
+        class="container navbar navbar-light align-items-center justify-content-between navbar-expand-md"
+      >
+        <div class="navbar-nav white-nav">
+          <a class="nav-item nav-link mr-3 active" href="#"
+            >Timeline <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link mr-3" href="#">My post</a>
+          <a class="nav-item nav-link mr-3" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#">Explore</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="informations">
+          <div class="d-flex align-items-center">
+            <div>
+              <button class="purple text-white btn">
+                Create new post
+              </button>
+              <button class="btn-transparent btn">
+                <i class="fa fa-bell icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div> -->
+
+    <!-- Content -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-9 order-2 order-lg-1">
+          <!-- Compose -->
+          <div class="card bg-white card px-5 py-3 mb-5">
+            <div class="mb-4">
+              <img src="/images/compose-photo.png" class="mr-3" alt="" />
+              Compose an epic...
+            </div>
+            <textarea
+              class="compose-input form-control mb-3"
+              name=""
+              id=""
+              rows="4"
+            ></textarea>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="actions">
+                <span class="mr-3"><i class="fa fa-camera"></i> Image</span>
+                <span class="mr-3"><i class="fa fa-camera"></i> Emoji</span>
+                <span class="mr-3"><i class="fa fa-camera"></i> Tags</span>
+              </p>
+              <button class="btn purple text-white px-3">Post</button>
+            </div>
+          </div>
+
+          <!-- Posts -->
+          <div class="post bg-white card px-5 py-3 mb-3">
+            <div class="row">
+              <div class="col-2 text-center">
+                <img src="/images/post-photo.png" class="img-fluid" alt="" />
+              </div>
+              <div class="col-10">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex mb-3 align-items-center">
+                    <p class="sub-text purple-text">Adesanoye Adenike</p>
+                    <p class="small-circle mx-3">-</p>
+                    <p class="sub-text">5 mins ago</p>
+                  </div>
+                  <div class="category d-none d-block">
+                    <button
+                      class="btn btn-sm cat-btn purple-text"
+                      style="background: #f3e9f5;"
+                    >
+                      UI/UX
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="mb-2">How To Edit Files in GitHub</h2>
+                  <p>
+                    Editing files on GitHib is really an easy task if you can
+                    read the article below: If you have various files in your
+                    repository, just browse through the files then select the
+                    file you want to edit, an easy task if you can read......
+                  </p>
+                  <hr />
+                  <div class="d-flex align-items-center">
+                    <p class="comment mr-4">
+                      <span class="mr-2 icon"
+                        ><i class="fa fa-comment"></i></span
+                      >5 Comments
+                    </p>
+                    <p class="like mr-4">
+                      <span class="mr-2 icon"
+                        ><i class="fa fa-thumbs-up"></i></span
+                      >4 Likes
+                    </p>
+                    <p class="share">
+                      <span class="mr-2 icon"><i class="fa fa-share"></i></span
+                      >7 Shares
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="col-lg-3 order-1 order-lg-2">
+          <div class="row">
+            <div
+              class="card col-12 d-none order-3 order-lg-1 d-lg-block px-3 pb-3 py-5 mb-3"
+            >
+              <div class="text-center">
+                <img src="/images/user-photo.png" class="mb-1" alt="" />
+                <h1>Adesanoye Adenike</h1>
+                <p>Web Designer</p>
+              </div>
+              <div class="rw d-flex justify-content-between">
+                <div class="text-center border-right pr-3">
+                  <p class="numbers mb-n2">444</p>
+                  <p>Followers</p>
+                </div>
+                <div class="text-center border-right pr-3">
+                  <p class="numbers mb-n2">260</p>
+                  <p>Following</p>
+                </div>
+                <div class="text-center border-rigt">
+                  <p class="numbers mb-n2">170</p>
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+            <div class="card p-3 col-12 mb-3 order-2 order-lg-2">
+              <h1>Suggestions</h1>
+              <hr />
+              <div>
+                <div
+                  class="d-flex mb-3 justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/images/Ellipse 10.png"
+                      class="mt-n2 mr-3"
+                      alt=""
+                    />
+                    <div>
+                      <h6>James Olamide</h6>
+                      <p>Graphics Designer</p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-outine btn-sm plus purple-text float-right"
+                    type=""
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="d-flex mb-3 justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/images/Ellipse 10.png"
+                      class="mt-n2 mr-3"
+                      alt=""
+                    />
+                    <div>
+                      <h6>James Olamide</h6>
+                      <p>Graphics Designer</p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-outine btn-sm plus purple-text float-right"
+                    type=""
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="d-flex mb-3 justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/images/Ellipse 10.png"
+                      class="mt-n2 mr-3"
+                      alt=""
+                    />
+                    <div>
+                      <h6>James Olamide</h6>
+                      <p>Graphics Designer</p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-outine btn-sm plus purple-text float-right"
+                    type=""
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="d-flex mb-3 justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/images/Ellipse 10.png"
+                      class="mt-n2 mr-3"
+                      alt=""
+                    />
+                    <div>
+                      <h6>James Olamide</h6>
+                      <p>Graphics Designer</p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-outine btn-sm plus purple-text float-right"
+                    type=""
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+                <div
+                  class="d-flex mb-3 justify-content-between align-items-center"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="/images/Ellipse 10.png"
+                      class="mt-n2 mr-3"
+                      alt=""
+                    />
+                    <div>
+                      <h6>James Olamide</h6>
+                      <p>Graphics Designer</p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-outine btn-sm plus purple-text float-right"
+                    type=""
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="card col-12 p-3 mb-3 order-1 order-lg-3">
+              <h1 class="mb-3">
+                Get your favorite website posts on your timeline
+              </h1>
+              <div class="form">
+                <input type="text" class="form-control mb-3" />
+                <button class="btn btn-block purple text-white">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="footer text-center d-none d-lg-block">
+            <p>
+              <img src="/images/footer-logo.png" class="mr-2" alt="" /> Powered
+              By Lucid
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://use.fontawesome.com/140f2bfb6b.js"></script>
+  <script src="/javascript/main.js"></script>
+</html>

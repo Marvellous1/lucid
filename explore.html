@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lucid Blog</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="purple">
+      <nav
+        class="container navbar navbar-dark align-items-center justify-content-between navbar-expand-md"
+      >
+        <a class="navbar-brand" href="/home">
+          <img src="/images/logo.png" alt="logo" class="d-inline-block mr-3" />
+          Lucid
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link mr-2" href="#">Timeline </a>
+          <a class="nav-item nav-link mr-2" href="#">My post</a>
+          <a class="nav-item nav-link mr-2" href="#">Contact</a>
+          <a class="nav-item nav-link active" href="#">Explore</a>
+        </div>
+        <div class="informations">
+          <div class="d-flex align-items-center">
+            <div>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-search"></i>
+              </button>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-bell"></i>
+              </button>
+              <img src="/images/compose-photo.png" alt="" />
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                John Doe
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- </li> -->
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="container my-5">
+      <!-- Dropdown -->
+      <div class="card p-3 mb-5">
+        <h1 class="purple-text mb-3">Sort Post By:</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header bg-white" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn dropdown-button btn-link btn-block d-flex justify-content-between"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <h1 class="dropdown-title">Recent</h1>
+                  <h1 class="purple-text">&#8964;</h1>
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse hide"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Morbi leo risus</li>
+                  <li class="list-group-item">Porta ac consectetur ac</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <!-- main content  -->
+          <div class="card bg-white card p-5 py-3 mb-5">
+            <div class="single-content">
+              <h1>StartNG Pre-Internship</h1>
+              <hr />
+              <div class="cards mb-5 row">
+                <div class="col">
+                  <div class="card p-3 text-center">
+                    <img
+                      src="/images/compose-photo.png"
+                      class="img-fluid explore-img"
+                      alt=""
+                    />
+                    <h6>James George</h6>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card p-3 text-center">
+                    <img
+                      src="/images/compose-photo.png"
+                      class="img-fluid explore-img"
+                      alt=""
+                    />
+                    <h6>James George</h6>
+                  </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!-- posts -->
+              <div class="posts">
+                <div class="row">
+                  <div class="col-2 text-center">
+                    <img
+                      src="/images/post-photo.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex mb-3 align-items-center">
+                        <p class="sub-text purple-text">Adesanoye Adenike</p>
+                        <p class="small-circle mx-3">-</p>
+                        <p class="sub-text">5 mins ago</p>
+                      </div>
+                      <div class="category d-none d-block">
+                        <button
+                          class="btn btn-sm cat-btn purple-text"
+                          style="background: #f3e9f5;"
+                        >
+                          UI/UX
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <h2 class="mb-2">How To Edit Files in GitHub</h2>
+                      <p>
+                        Editing files on GitHib is really an easy task if you
+                        can read the article below: If you have various files in
+                        your repository, just browse through the files then
+                        select the file you want to edit, an easy task if you
+                        can read......
+                      </p>
+
+                      <div class="d-flex align-items-center">
+                        <p class="comment mr-4">
+                          <span class="mr-2 icon"
+                            ><i class="fa fa-comment"></i></span
+                          >5 Comments
+                        </p>
+                        <p class="like mr-4">
+                          <span class="mr-2 icon"
+                            ><i class="fa fa-thumbs-up"></i></span
+                          >4 Likes
+                        </p>
+                        <p class="share">
+                          <span class="mr-2 icon"
+                            ><i class="fa fa-share"></i></span
+                          >7 Shares
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+              </div>
+            </div>
+          </div>
+
+          <!-- Posts -->
+        </div>
+
+        <!-- Suggestions -->
+        <div class="col-md-3">
+          <div class="card px-3 py-5 mb-3">
+            <h1 class="mb-3">Categories</h1>
+            <form action="" class="card mb-3">
+              <div class="px-2 d-flex align-items-center">
+                <i class="fa fa-search icon mr-1"></i>
+                <input
+                  type="text"
+                  placeholder="Search for categories"
+                  class="form-control cat-search"
+                />
+              </div>
+            </form>
+
+            <div class="categories mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="">Technology (3652)</p>
+                <div class="float-right">
+                  <div class="round-check mt-n2 mr-2">
+                    <input type="checkbox" checked id="checkbox" />
+                    <label for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="">Html (219)</p>
+                <div class="float-right">
+                  <div class="round-check mt-n2 mr-2">
+                    <input type="checkbox" checked id="checkbox" />
+                    <label for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="">Start.ng</p>
+                <div class="float-right">
+                  <div class="round-check mt-n2 mr-2">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="">Somethng</p>
+                <div class="float-right">
+                  <div class="round-check mt-n2 mr-2">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="">Somethng</p>
+                <div class="float-right">
+                  <div class="round-check mt-n2 mr-2">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://use.fontawesome.com/140f2bfb6b.js"></script>
+  <script src="/javascript/main.js"></script>
+</html>
