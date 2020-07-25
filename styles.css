@@ -133,10 +133,38 @@ textarea:active {
   border-bottom: 2px solid #C4C4C4;
 }
 
-.cat-search, .cat-search:hover, .cat-search:active {
+.cat-search, .cat-search:hover, .cat-search:active, button {
     border: none;
     outline: none;
     box-shadow: none !important;
+}
+
+.post-title {
+  font-weight: 600;
+font-size: 40px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #8D8D8D;
+  color: white;
+  font-size: 36px;
+  border-radius: 50%;
+}
+
+.twitter {
+  background-color:#20AFFF;
+}
+.twitter-outline {
+  border: #20AFFF solid 1px;
+}
+
+.linkedin {
+  background-color:#0029BA;
+}
+.linkedin-outline {
+  border: 1px solid #0029BA;
 }
 
 .round-check {
