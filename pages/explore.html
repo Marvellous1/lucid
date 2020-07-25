@@ -20,30 +20,66 @@
     <!-- Nav -->
     <div class="purple">
       <nav
-        class="container navbar navbar-dark align-items-center justify-content-between navbar-expand-md"
+        class="container navbar navbar-dark align-items-center justify-content-between navbar-expand-lg"
       >
-        <a class="navbar-brand" href="/home">
-          <img src="/images/logo.png" alt="logo" class="d-inline-block mr-3" />
+        <a class="navbar-brand" href="/index.html">
+          <img src="/images/logo.png" alt="logo" class="d-inline-block mr-2" />
           Lucid
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link mr-2" href="#">Timeline </a>
-          <a class="nav-item nav-link mr-2" href="#">My post</a>
-          <a class="nav-item nav-link mr-2" href="#">Contact</a>
-          <a class="nav-item nav-link active" href="#">Explore</a>
+        <div class="d-lg-none d-flex align-items-center">
+          <button class="btn-transparent nav-col collapse show btn">
+            <i class="fa nav-icons fa-search"></i>
+          </button>
+          <button class="btn-transparent nav-col collapse show btn">
+            <i class="fa nav-icons fa-bell"></i>
+          </button>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target=".nav-col"
+            aria-controls="navbarNavAltMarkup bell search"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="icon-bar top-bar"></div>
+            <div class="icon-bar middle-bar"></div>
+            <div class="icon-bar bottom-bar"></div>
+          </button>
         </div>
-        <div class="informations">
+
+        <!-- Dont remove empty div -->
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse nav-col navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="d-lg-none d-flex align-items-center pb-5 border-bottom">
+              <img
+                src="/images/Ellipse 15.png"
+                class="mb-3 mr-3 mt-n1"
+                alt=""
+              />
+              <div class="text-center">
+                <h1 class="text-white">Adesanoye Adenike</h1>
+                <p class="text-white">Web Designer</p>
+              </div>
+            </div>
+            <a class="nav-item nav-link mr-2 " href="/index.html"
+              >Timeline <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link  mr-2" href="/pages/post.html">My post</a>
+            <a class="nav-item nav-link mr-2" href="#">Contact</a>
+            <a class="nav-item nav-link active" href="/pages/explore.html">Explore</a>
+            <div
+              class="d-lg-none d-flex mobile-footer-logo align-items-center pt-3 w-100 border-top"
+            >
+              <img src="/images/nav-footer-logo.png" class="mb-3 mr-3" alt="" />
+              <div class="text-center">
+                <p class="text-white">Powered By Lucid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="informations d-none d-lg-block">
           <div class="d-flex align-items-center">
             <div>
               <button class="btn-transparent btn">
@@ -74,8 +110,6 @@
               </div>
             </div>
           </div>
-
-          <!-- </li> -->
         </div>
       </nav>
     </div>
