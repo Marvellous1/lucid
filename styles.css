@@ -216,8 +216,9 @@ button {
 
 .navbar-toggler,
 .navbar-toggler:focus,
-.navbar-toggler.navbar-toggler.collapsed {
-  border: none !important;
+.navbar-toggler:active {
+  border: none ;
+  outline: none;
   box-shadow: none;
   background: transparent !important;
 }
