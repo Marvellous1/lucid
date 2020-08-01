@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lucid Blog</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="purple">
+      <nav
+        class="container navbar navbar-dark align-items-center justify-content-between navbar-expand-lg"
+      >
+        <a class="navbar-brand" href="/index.html">
+          <img src="/images/logo.png" alt="logo" class="d-inline-block mr-2" />
+          Lucid
+        </a>
+        <div class="d-lg-none d-flex align-items-center">
+          <button class="btn-transparent nav-col collapse show btn">
+            <i class="fa nav-icons fa-search"></i>
+          </button>
+          <button class="btn-transparent nav-col collapse show btn">
+            <i class="fa nav-icons fa-bell"></i>
+          </button>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target=".nav-col"
+            aria-controls="navbarNavAltMarkup bell search"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="icon-bar top-bar"></div>
+            <div class="icon-bar middle-bar"></div>
+            <div class="icon-bar bottom-bar"></div>
+          </button>
+        </div>
+
+        <!-- Dont remove empty div -->
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse nav-col navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="d-lg-none d-flex align-items-center pb-5 border-bottom">
+              <img
+                src="/images/Ellipse 15.png"
+                class="mb-3 mr-3 mt-n1"
+                alt=""
+              />
+              <div class="text-center">
+                <h1 class="text-white">Adesanoye Adenike</h1>
+                <p class="text-white">Web Designer</p>
+              </div>
+            </div>
+            <a class="nav-item nav-link mr-2 " href="/index.html"
+              >Timeline <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link  mr-2" href="/pages/post.html">My post</a>
+            <a class="nav-item nav-link active mr-2" href="/pages/notfound.html">Contact</a>
+            <a class="nav-item nav-link" href="/pages/explore.html">Explore</a>
+            <div
+              class="d-lg-none d-flex mobile-footer-logo mt-auto align-items-center pt-3 w-100 border-top"
+            >
+              <img src="/images/nav-footer-logo.png" class="mb-3 mr-3" alt="" />
+              <div class="text-center">
+                <p class="text-white">Powered By Lucid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="informations d-none d-lg-block">
+          <div class="d-flex align-items-center">
+            <div>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-search"></i>
+              </button>
+              <button class="btn-transparent btn">
+                <i class="fa nav-icons fa-bell"></i>
+              </button>
+              <img src="/images/compose-photo.png" alt="" />
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                John Doe
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="container my-5">
+      <!-- Not Found -->
+<div class="card mb-5 p-5">
+    <div class="card-body text-center">
+        <h1 class="post-title" ><span class="purple-text">404</span> Not Found</h1>
+        <h6>The page you are looking for is not found or may have been moved to another location. </h6>
+        <p>Check out some of out top pages</p>
+        <div class="buttons">
+            <a href="/index.html" class="btn purple text-white mb-2">Home</a>
+            <a href="/pages/explore.html" class="btn purple text-white mb-2">Explore</a>
+            <a href="/pages/post.html" class="btn purple text-white mb-2">Post</a>
+        </div>
+    </div>
+</div>
+
+      <!-- Footer -->
+
+      <div class="footer text-center">
+        <img src="/images/footer-logo.png" alt="">
+        <p>© 2020 Lucid v1.0. All rights reserved.</p>
+        <p>
+          About Us <span class="mx-3">|</span> Support
+          <span class="mx-3">|</span> Terms and Condition
+          <span class="mx-3">|</span> Private policy
+          <span class="mx-3">|</span> Directory <span class="mx-3">|</span> Get
+          started
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://use.fontawesome.com/140f2bfb6b.js"></script>
+  <script src="/javascript/main.js"></script>
+</html>
