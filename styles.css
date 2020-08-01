@@ -1,3 +1,5 @@
+/* Website is bootstrap at it's core */
+
 :root {
   --my-purple: #6f2184;
 }
@@ -44,6 +46,10 @@ p {
   font-size: 22px;
 }
 
+nav {
+  margin-bottom: 90px;
+}
+
 .icon {
   font-size: 18px;
   color: #8d8d8d;
@@ -80,7 +86,7 @@ hr {
 }
 
 .card {
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
 .nav-icons {
@@ -106,13 +112,13 @@ hr {
 .plus {
   position: relative;
   font-size: 16px;
-  box-shadow: 0px 0px 3px #C7C7C7;
+  box-shadow: 0px 0px 3px #c7c7c7;
 }
 
 .suggesttion-title {
   font-weight: normal;
-font-size: 14px;
-  color: #8D8D8D;
+  font-size: 14px;
+  color: #8d8d8d;
 }
 
 .plus-icon {
@@ -234,7 +240,7 @@ button {
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  border: none ;
+  border: none;
   outline: none;
   box-shadow: none;
   background: transparent !important;
@@ -310,27 +316,27 @@ button {
     );
     border-image-slice: 1;
   }
-/* 
-  .mobile-footer-logo {
-    position: absolute;
-    bottom: 10vh;
-  } */
+
+  .numbers {
+    font-size: 20px;
+  }
+
+  nav {
+    margin-bottom: 70px;
+  }
+
+  .post-title {
+    font-weight: 600;
+    font-size: 36px;
+  }
 }
 
-/* @media (min-width: 576px) {
-
-} */
-
-/* @media (min-width: 768px ) { 
-  #navbarNavAltMarkup{
-    height: 100vh;
-    }
-    
-} */
-/* 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-   */
+@media (max-width: 576px) {
+  .post-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  nav {
+    margin-bottom: 50px;
+  }
+}
